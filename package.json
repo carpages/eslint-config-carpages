@@ -1,0 +1,34 @@
+{
+  "name": "eslint-config-carpages",
+  "version": "0.1.0",
+  "description": "A shareable Eslint config for use by Carpages.ca developers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carpages/eslint-config-carpages.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Jeff Andrews <jeffandrews@me.com> (http://jeffwandrews.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carpages/eslint-config-carpages/issues"
+  },
+  "homepage": "https://github.com/carpages/eslint-config-carpages",
+  "peerDependencies": {
+    "eslint": "^3.13.1"
+  },
+  "dependencies": {
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-requirejs": "^3.1.1",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}

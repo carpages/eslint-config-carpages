@@ -1,0 +1,15 @@
+{
+  "extends": [ "plugin:react/recommended" ],
+
+  "plugins": [ "react" ],
+
+  "globals": {
+    "React": true
+  },
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
