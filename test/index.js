@@ -3,11 +3,11 @@ const test = require( 'ava' );
 const path = require( 'path' );
 
 const defaultLinter = new eslint.CLIEngine({
-  configFile: path.join( __dirname, '..', '.eslintrc' )
+  configFile: path.join( __dirname, '..', '.eslintrc.json' )
 });
 
 const reactLinter = new eslint.CLIEngine({
-  configFile: path.join( __dirname, '..', 'lib/react', '.eslintrc' )
+  configFile: path.join( __dirname, '..', 'lib/react', '.eslintrc.json' )
 });
 
 test( 'test default linting config', t => {
