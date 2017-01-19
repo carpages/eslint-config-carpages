@@ -30,5 +30,9 @@
     "eslint-plugin-react": "^6.9.0",
     "eslint-plugin-requirejs": "^3.1.1",
     "eslint-plugin-standard": "^2.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "eslint": "^3.13.1"
   }
 }
