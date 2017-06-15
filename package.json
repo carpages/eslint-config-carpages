@@ -4,7 +4,7 @@
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava -v"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,9 @@
     "eslint": "^3.13.1"
   },
   "dependencies": {
-    "eslint-config-semistandard": "^11.0.0",
-    "eslint-config-standard": "^10.2.1",
+    "babel-eslint": "^7.2.3",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.4.0",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "eslint": "^3.13.1"
+    "eslint": "^3.13.1",
+    "eslint-config-carpages": "./"
   }
 }
