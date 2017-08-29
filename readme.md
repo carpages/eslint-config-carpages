@@ -1,6 +1,16 @@
 # Carpages Eslint Base Configuration
 
-### Usage
+## Installation
+**NPM**
+```shell
+npm install --save-dev eslint eslint-config-carpages
+```
+**Yarn**
+```shell
+yarn add --dev eslint eslint-config-carpages
+```
+
+## Usage
 `.eslintrc.js` - If you prefer JS
 ```js
 module.exports = {
