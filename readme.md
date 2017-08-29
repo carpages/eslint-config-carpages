@@ -13,9 +13,7 @@ module.exports = {
 `.eslintrc.json` - If you prefer JSON
 ```json
 {
-  // ...
   "extends": ["carpages"]
-  // ...
 }
 ```
 
@@ -24,13 +22,11 @@ module.exports = {
 `.eslintrc` - If you prefer JSON without extension
 ```json
 {
-  // ...
   "extends": ["carpages"]
-  // ...
 }
 ```
 
-## A base config for React development is also included
+### A base config for React development is also included
 ```js
 module.exports = {
   // ...
