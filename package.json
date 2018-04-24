@@ -1,18 +1,20 @@
 {
   "name": "eslint-config-carpages",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "index.js",
   "scripts": {
     "test": "ava -v",
-    "eslint-check":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carpages/eslint-config-carpages.git"
   },
-  "keywords": ["eslint", "eslintconfig"],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "author": "Jeff Andrews <jeffandrews@me.com> (http://jeffwandrews.com)",
   "license": "MIT",
   "bugs": {
