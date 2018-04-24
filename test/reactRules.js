@@ -4,7 +4,8 @@ const path = require( 'path' );
 
 const reactLinter = new eslint.CLIEngine({
   useEslintrc: false,
-  configFile: path.join( __dirname, '..', 'lib/rules/react.js' )
+  configFile: './lib/rules/react.js',
+  ignore: false
 });
 
 test( 'test react linting config', t => {

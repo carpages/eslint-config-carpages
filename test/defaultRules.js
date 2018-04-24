@@ -4,7 +4,8 @@ const path = require( 'path' );
 
 const defaultLinter = new eslint.CLIEngine({
   useEslintrc: false,
-  configFile: path.join( __dirname, '..', 'lib/rules/default.js' )
+  configFile: path.join( __dirname, '..', 'lib/rules/default.js' ),
+  ignore: false
 });
 
 test( 'test default linting config', t => {

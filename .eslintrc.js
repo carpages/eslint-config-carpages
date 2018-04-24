@@ -1,3 +1,5 @@
+const path = require( 'path' );
+
 module.exports = {
-  extends: ['./lib/rules/default.js', './lib/rules/react.js']
+  extends: [ path.join( __dirname, 'lib/rules/default.js' ) ]
 };

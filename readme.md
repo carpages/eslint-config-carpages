@@ -20,6 +20,8 @@ module.exports = {
 }
 ```
 
+**OR**
+
 `.eslintrc.json` - If you prefer JSON
 ```json
 {
