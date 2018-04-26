@@ -1,1 +1,1 @@
-module.exports = require( './lib/rules/default' );
+module.exports = require( './rules/default' );

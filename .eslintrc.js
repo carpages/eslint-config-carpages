@@ -1,5 +1,7 @@
-const path = require( 'path' );
+const relativePath = require('./util/relativePath');
+const relativeToDirname = relativePath.to(__dirname);
+const rules = relativePath.to(relativeToDirname('rules'));
 
 module.exports = {
-  extends: [ path.join( __dirname, 'lib/rules/default.js' ) ]
+  extends: rules('default.js')
 };
