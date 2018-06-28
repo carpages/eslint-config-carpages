@@ -1346,11 +1346,11 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
 eslint-config-carpages@./:
-  version "1.1.1"
+  version "3.0.0"
   dependencies:
     babel-eslint "^8.2.5"
     eslint-config-semistandard "^12.0.1"
-    eslint-config-standard "^11.0.0"
+    eslint-config-standard "12.0.0-alpha.0"
     eslint-plugin-flowtype "^2.49.3"
     eslint-plugin-import "^2.13.0"
     eslint-plugin-node "^6.0.1"
@@ -1363,9 +1363,9 @@ eslint-config-semistandard@^12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/eslint-config-semistandard/-/eslint-config-semistandard-12.0.1.tgz#e35d66959dfe6f0d8e8445d7a4de37d8fd8875f4"
 
-eslint-config-standard@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-11.0.0.tgz#87ee0d3c9d95382dc761958cbb23da9eea31e0ba"
+eslint-config-standard@12.0.0-alpha.0:
+  version "12.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-12.0.0-alpha.0.tgz#f21f864ba7f52f2eb98670c94b03322186ac18a5"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
