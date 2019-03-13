@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
-    "standard",
-    "plugin:flowtype/recommended",
     "prettier",
-    "prettier/react"
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard"
   ],
 
   plugins: ["html", "prettier", "flowtype", "requirejs"],
@@ -81,14 +81,6 @@ module.exports = {
       {
         avoidEscape: true,
         allowTemplateLiterals: true
-      }
-    ],
-
-    "prettier/prettier": [
-      0,
-      {
-        singleQuote: true,
-        printWidth: 120
       }
     ]
   }

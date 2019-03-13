@@ -26,7 +26,7 @@
     "babel-eslint": "9.x",
     "eslint": "5.x",
     "eslint-config-prettier": "4.x",
-    "eslint-config-standard": "1.x",
+    "eslint-config-standard": "12.x",
     "eslint-plugin-flowtype": "3.x",
     "eslint-plugin-html": "5.x",
     "eslint-plugin-import": "2.x",
