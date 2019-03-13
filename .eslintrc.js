@@ -82,6 +82,15 @@ module.exports = {
         avoidEscape: true,
         allowTemplateLiterals: true
       }
+    ],
+
+    "prettier/prettier": [
+      "error",
+      {
+        trailingComma: "es5",
+        singleQuote: true,
+        printWidth: 120
+      }
     ]
   }
 };
