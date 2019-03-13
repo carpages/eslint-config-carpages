@@ -85,9 +85,8 @@ module.exports = {
     ],
 
     "prettier/prettier": [
-      "error",
+      0,
       {
-        trailingComma: "es5",
         singleQuote: true,
         printWidth: 120
       }
