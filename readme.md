@@ -1,13 +1,15 @@
-# Carpages Eslint Base Configuration
+# Carpages ESLint Config
 
 ## Installation
-**NPM**
 ```shell
-npm install --save-dev eslint eslint-config-carpages
+npx install-peerdeps --dev eslint-config-carpages
 ```
-**Yarn**
+
+**OR**
+
+If you prefer global installation:
 ```shell
-yarn add --dev eslint eslint-config-carpages
+npx install-peerdeps --global eslint-config-carpages
 ```
 
 ## Usage
@@ -35,14 +37,5 @@ module.exports = {
 ```json
 {
   "extends": ["carpages"]
-}
-```
-
-### A base config for React development is also included
-```js
-module.exports = {
-  // ...
-  extends: ['carpages/react']
-  // ...
 }
 ```

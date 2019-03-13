@@ -1,1 +1,2 @@
-module.exports = require( './rules/default' );
+const eslintrc = require( './.eslintrc' );
+module.exports = eslintrc;

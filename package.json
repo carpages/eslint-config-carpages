@@ -4,9 +4,9 @@
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "index.js",
   "scripts": {
-    "test": "ava -v",
-    "eslint-check": "eslint --print-config .eslintrc.js",
-    "format": "prettier-eslint --write ./**/*.js --eslint-config-path ./.eslintrc.js --ignore **/node_modules/**"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "eslint-check": "eslint --print-config .eslintrc.js"
   },
   "repository": {
     "type": "git",
@@ -23,23 +23,36 @@
   },
   "homepage": "https://github.com/carpages/eslint-config-carpages",
   "peerDependencies": {
-    "eslint": ">= 4.x"
-  },
-  "dependencies": {
-    "babel-eslint": "8.x",
-    "eslint-config-standard": "11.x",
-    "eslint-plugin-flowtype": "^2.49.3",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-requirejs": "^3.2.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "babel-eslint": "9.x",
+    "eslint": "5.x",
+    "eslint-config-standard": "1.x",
+    "eslint-config-prettier": "4.x",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-node": "8.x",
+    "eslint-plugin-promise": "4.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-requirejs": "3.x",
+    "eslint-plugin-standard": "4.x",
+    "eslint-plugin-prettier": "3.x",
+    "eslint-plugin-html": "5.x",
+    "prettier": "1.x"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "eslint": "4.x",
+    "babel-eslint": "9.x",
+    "eslint": "5.x",
     "eslint-config-carpages": "./",
-    "prettier-eslint-cli": "^4.7.1"
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-requirejs": "^3.2.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-html": "^5.0.3",
+    "prettier": "^1.16.4"
   }
 }
