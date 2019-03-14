@@ -5,7 +5,9 @@ module.exports = {
     es6: true,
     browser: true,
     commonjs: true,
-    jquery: true
+    node: true,
+    jquery: true,
+    amd: true
   },
 
   globals: {
@@ -14,12 +16,11 @@ module.exports = {
 
   parser: 'babel-eslint',
 
-  parserOptions: {
-    ecmaVersion: 6
-  },
+  parserOptions: {},
 
   rules: {
     semi: [ 'error', 'always' ],
+
     'object-curly-spacing': [
       'error',
       'always',
