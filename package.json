@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-carpages",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "./index.js",
   "scripts": {
