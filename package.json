@@ -2,12 +2,17 @@
   "name": "eslint-config-carpages",
   "version": "4.0.0",
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "ava -v",
     "eslint-check": "eslint --print-config .eslintrc.js",
     "format": "prettier-eslint --write ./**/*.js --eslint-config-path ./.eslintrc.js --ignore **/node_modules/**"
   },
+  "files": [
+    "/index.js",
+    "/rules",
+    "/util"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/carpages/eslint-config-carpages"
