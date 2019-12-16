@@ -6,4 +6,5 @@ const relativeTo = path => {
   };
 };
 
+exports.relativeTo = relativeTo;
 exports.to = relativeTo;

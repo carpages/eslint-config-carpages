@@ -1,2 +1,4 @@
 **/test/fixtures*
 package.json
+!.eslintrc.js
+!.prettierrc.js
