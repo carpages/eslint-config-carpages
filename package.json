@@ -5,8 +5,7 @@
   "main": "./index.js",
   "scripts": {
     "test": "ava -v",
-    "eslint-check": "eslint --print-config .eslintrc.js",
-    "format": "prettier-eslint --write ./**/*.js --eslint-config-path ./.eslintrc.js --ignore **/node_modules/**"
+    "eslint-check": "eslint --print-config .eslintrc.js"
   },
   "files": [
     "/index.js",
@@ -28,16 +27,17 @@
   },
   "homepage": "https://github.com/carpages/eslint-config-carpages",
   "dependencies": {
-    "babel-eslint": "10.x",
+    "babel-eslint": "^10.0.3",
     "eslint": "6.x",
-    "eslint-config-standard": "14.x",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
     "eslint-plugin-flowtype": "4.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-node": "10.x",
-    "eslint-plugin-promise": "4.x",
-    "eslint-plugin-react": "7.x",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-requirejs": "4.x",
-    "eslint-plugin-standard": "4.x"
+    "eslint-plugin-standard": "^4.0.1"
   },
   "devDependencies": {
     "ava": "2.x",
@@ -46,6 +46,7 @@
   },
   "ava": {
     "files": [
+      "./test/**/*.test.js",
       "!test/fixtures"
     ]
   }
