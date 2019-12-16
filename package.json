@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-carpages",
-  "version": "3.2.0-alpha.1",
+  "version": "3.2.0-alpha.2",
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "index.js",
   "scripts": {
@@ -22,31 +22,26 @@
     "url": "https://github.com/carpages/eslint-config-carpages/issues"
   },
   "homepage": "https://github.com/carpages/eslint-config-carpages",
-  "peerDependencies": {
+  "dependencies": {
     "babel-eslint": "10.x",
-    "eslint": ">= 4.x",
-    "eslint-config-standard": "12.x",
-    "eslint-plugin-flowtype": "3.x",
+    "eslint": "6.x",
+    "eslint-config-standard": "14.x",
+    "eslint-plugin-flowtype": "4.x",
     "eslint-plugin-import": "2.x",
-    "eslint-plugin-node": "8.x",
+    "eslint-plugin-node": "10.x",
     "eslint-plugin-promise": "4.x",
     "eslint-plugin-react": "7.x",
-    "eslint-plugin-requirejs": "3.x",
+    "eslint-plugin-requirejs": "4.x",
     "eslint-plugin-standard": "4.x"
   },
   "devDependencies": {
-    "ava": "1.x",
-    "babel-eslint": "10.x",
-    "eslint": "5.x",
-    "eslint-config-carpages": "./",
-    "eslint-config-standard": "12.x",
-    "eslint-plugin-flowtype": "3.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-node": "8.x",
-    "eslint-plugin-promise": "4.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-requirejs": "3.x",
-    "eslint-plugin-standard": "4.x",
-    "prettier-eslint-cli": "4.x"
+    "ava": "2.x",
+    "prettier-eslint": "9.x",
+    "react": "16.x"
+  },
+  "ava": {
+    "files": [
+      "!test/fixtures"
+    ]
   }
 }

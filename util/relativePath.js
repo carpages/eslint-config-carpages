@@ -6,6 +6,4 @@ const relativeTo = path => {
   };
 };
 
-module.exports = {
-  to: relativeTo
-};
+exports.to = relativeTo;

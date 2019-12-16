@@ -1,11 +1,11 @@
-const eslint = require( 'eslint' );
 const test = require( 'ava' );
+const eslint = require( 'eslint' );
 
-const relativePath = require( '../util/relativePath' );
-const relativeToDirname = relativePath.to( __dirname );
-const upOneDir = relativePath.to( relativeToDirname( '..' ));
-const rules = relativePath.to( upOneDir( 'rules' ));
-const fixtures = relativePath.to( relativeToDirname( 'fixtures' ));
+const { relativeTo } = require( '../util/relativePath' );
+const relativeToDirname = relativeTo( __dirname );
+const upOneDir = relativeTo( relativeToDirname( '..' ));
+const rules = relativeTo( upOneDir( 'rules' ));
+const fixtures = relativeTo( relativeToDirname( 'fixtures' ));
 
 const reactLinter = new eslint.CLIEngine({
   useEslintrc: false,
@@ -16,9 +16,7 @@ const reactLinter = new eslint.CLIEngine({
 test( 'test react linting config', t => {
   t.plan( 1 );
 
-  const missingSemicolon = reactLinter.executeOnFiles([
-    fixtures( 'react/missingSemicolon.js' )
-  ]);
+  const missingSemicolon = reactLinter.executeOnFiles([ fixtures( 'react/missingSemicolon.js' ) ]);
 
   t.is( missingSemicolon.results[0].messages[0].message, 'Missing semicolon.' );
 });
