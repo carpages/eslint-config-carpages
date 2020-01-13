@@ -1,8 +1,9 @@
-const relativePath = require( '../util/relativePath' );
-const relativeToDirname = relativePath.to( __dirname );
+const relativePath = require('../util/relativePath');
+const relativeToDirname = relativePath.to(__dirname);
 
 module.exports = {
-  extends: [ relativeToDirname( 'default.js' ), 'standard-react' ],
+  extends: [relativeToDirname('default.js'), 'standard-react', 'prettier/react'],
+  plugins: ['react'],
 
   settings: {
     react: {

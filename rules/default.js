@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [ 'standard' ],
+  extends: ['standard', 'plugin:prettier/recommended', 'prettier/standard'],
 
   env: {
     es6: true,
@@ -19,50 +19,10 @@ module.exports = {
   parserOptions: {},
 
   rules: {
-    semi: [ 'error', 'always' ],
-
-    'object-curly-spacing': [
+    'prettier/prettier': [
       'error',
-      'always',
-      {
-        objectsInObjects: false,
-        arraysInObjects: false
-      }
+      { singleQuote: true, jsxSingleQuote: true, printWidth: 100, jsxBracketSameLine: false }
     ],
-
-    'array-bracket-spacing': [
-      'error',
-      'always',
-      {
-        arraysInArrays: false,
-        objectsInArrays: false
-      }
-    ],
-
-    'space-in-parens': [
-      'error',
-      'always',
-      {
-        exceptions: [ '{}', '()', '[]', 'empty' ]
-      }
-    ],
-
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'never',
-        named: 'never'
-      }
-    ],
-
-    'no-multi-spaces': [
-      'error',
-      {
-        exceptions: {
-          VariableDeclarator: true,
-          ImportDeclaration: true
-        }
-      }
-    ]
+    semi: ['error', 'always']
   }
 };
