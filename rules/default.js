@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['standard', 'plugin:prettier/recommended', 'prettier/standard'],
+  extends: ['plugin:prettier/recommended'],
 
   env: {
     es6: true,
@@ -7,22 +7,22 @@ module.exports = {
     commonjs: true,
     node: true,
     jquery: true,
-    amd: true
+    amd: true,
   },
 
   globals: {
-    G: true
+    G: true,
   },
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   parserOptions: {},
 
   rules: {
     'prettier/prettier': [
       'error',
-      { singleQuote: true, jsxSingleQuote: true, printWidth: 100, jsxBracketSameLine: false }
+      { singleQuote: true, jsxSingleQuote: true, printWidth: 100, jsxBracketSameLine: false },
     ],
-    semi: ['error', 'always']
-  }
+    semi: ['error', 'always'],
+  },
 };

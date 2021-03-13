@@ -12,6 +12,5 @@ test('test react linting config', t => {
   t.plan(1);
 
   const missingSemicolon = reactLinter.executeOnFiles([config.fixtures('react/jsxCurlyBraces.js')]);
-
-  t.is(missingSemicolon.results[0].messages[0].message, 'Curly braces are unnecessary here.');
+  t.is(missingSemicolon.errorCount, 0);
 });
