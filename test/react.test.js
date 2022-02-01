@@ -1,16 +1,16 @@
+const { ESLint } = require('eslint');
 const test = require('ava');
-const eslint = require('eslint');
-const config = require('./config');
+const { rules, fixtures } = require('./config');
 
-const reactLinter = new eslint.CLIEngine({
+const reactLinter = new ESLint({
   useEslintrc: false,
-  configFile: config.rules('react.js'),
-  ignore: false
+  overrideConfigFile: rules('react.js'),
+  ignore: false,
 });
 
-test('test react linting config', t => {
+test('test react linting config', async (t) => {
   t.plan(1);
 
-  const missingSemicolon = reactLinter.executeOnFiles([config.fixtures('react/jsxCurlyBraces.js')]);
-  t.is(missingSemicolon.errorCount, 0);
+  const missingSemicolon = await reactLinter.lintFiles([fixtures('react/jsxCurlyBraces.js')]);
+  t.is(missingSemicolon[0].errorCount, 0);
 });

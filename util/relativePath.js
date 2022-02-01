@@ -1,10 +1,7 @@
-const joinPath = require( 'path' ).join;
+const { join } = require('path');
 
-const relativeTo = path => {
-  return function() {
-    return joinPath( path, ...arguments );
-  };
-};
+function relativeTo(path) {
+  return (...args) => join(path, ...args);
+}
 
-exports.relativeTo = relativeTo;
-exports.to = relativeTo;
+module.exports = { relativeTo, to: relativeTo };

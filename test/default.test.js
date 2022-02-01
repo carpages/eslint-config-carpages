@@ -1,17 +1,16 @@
-const eslint = require('eslint');
+const { ESLint } = require('eslint');
 const test = require('ava');
-const config = require('./config');
+const { rules, fixtures } = require('./config');
 
-const defaultLinter = new eslint.CLIEngine({
+const defaultLinter = new ESLint({
   useEslintrc: false,
-  configFile: config.rules('default.js'),
-  ignore: false
+  overrideConfigFile: rules('default.js'),
+  ignore: false,
 });
 
-test('test default linting config', t => {
+test('test default linting config', async (t) => {
   t.plan(1);
 
-  const parenSpacing = defaultLinter.executeOnFiles([config.fixtures('default/addSemicolon.js')]);
-
-  t.is(parenSpacing.results[0].messages[0].message, 'Insert `;`');
+  const parenSpacing = await defaultLinter.lintFiles([fixtures('default/addSemicolon.js')]);
+  t.truthy(parenSpacing[0].messages.some((m) => m.message === 'Missing semicolon.'));
 });

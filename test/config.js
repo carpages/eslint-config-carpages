@@ -6,5 +6,5 @@ const fixtures = relativePath.to(relativeToDirname('fixtures'));
 
 module.exports = {
   rules,
-  fixtures
+  fixtures,
 };
