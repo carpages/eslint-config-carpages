@@ -6,6 +6,6 @@ module.exports = {
   plugins: ['requirejs'],
 
   env: {
-    amd: true
-  }
+    amd: true,
+  },
 };
