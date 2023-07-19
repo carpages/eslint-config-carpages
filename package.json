@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-carpages",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "A shareable Eslint config for use by Carpages.ca developers.",
   "main": "./index.js",
   "scripts": {
@@ -50,8 +50,8 @@
   },
   "devDependencies": {
     "ava": "^5.0",
-    "react": "^18.2",
-    "prettier": "^3.0"
+    "prettier": "^3.0",
+    "react": "^18.2"
   },
   "ava": {
     "files": [
