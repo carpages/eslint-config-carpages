@@ -15,6 +15,15 @@
     "/flat.js",
     "/flat"
   ],
+  "exports": {
+    ".": {
+      "default": "./default.js"
+    },
+    "./flat": {
+      "default": "./flat.js"
+    },
+    "./package.json": "./package.json"
+  },
   "engines": {
     "node": ">= 20"
   },

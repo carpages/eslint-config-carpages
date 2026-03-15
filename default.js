@@ -1,4 +1,4 @@
-module.exports = {
+const defaultConfig = {
   extends: ['plugin:prettier/recommended'],
 
   env: {
@@ -26,3 +26,11 @@ module.exports = {
     semi: ['error', 'always'],
   },
 };
+
+defaultConfig.configs = {
+  default: defaultConfig,
+  dsp: require('./dsp'),
+  react: require('./react'),
+};
+
+module.exports = defaultConfig;
