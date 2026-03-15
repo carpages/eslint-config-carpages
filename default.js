@@ -27,10 +27,10 @@ const defaultConfig = {
   },
 };
 
-defaultConfig.configs = {
+module.exports = defaultConfig;
+
+exports.configs = {
   default: defaultConfig,
   dsp: require('./dsp'),
   react: require('./react'),
 };
-
-module.exports = defaultConfig;
