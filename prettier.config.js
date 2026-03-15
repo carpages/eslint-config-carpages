@@ -1,5 +1,5 @@
 module.exports = {
   singleQuote: true,
   jsxSingleQuote: true,
-  printWidth: 100
+  printWidth: 100,
 };
