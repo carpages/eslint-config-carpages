@@ -8,9 +8,11 @@
     "eslint-check": "eslint --print-config .eslintrc.js"
   },
   "files": [
-    "/index.js",
-    "/rules",
-    "/util"
+    "/default.js",
+    "/dsp.js",
+    "/react.js",
+    "/flat.js",
+    "/flat"
   ],
   "engines": {
     "node": ">= 20"
@@ -35,14 +37,9 @@
     "@babel/preset-env": "^7.29.0",
     "@babel/preset-react": "^7.28.5",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-standard-react": "^13.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-requirejs": "4.0.1",
-    "eslint-plugin-standard": "^5.0.0",
     "globals": "^17.4.0"
   },
   "peerDependencies": {
