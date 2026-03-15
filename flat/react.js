@@ -1,11 +1,9 @@
 const { defineConfig } = require('eslint/config');
 const react = require('eslint-plugin-react');
-
-const defaultConfig = require('./default');
 const globals = require('globals');
 
 module.exports = defineConfig([
-  ...defaultConfig,
+  require('./default'),
   {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     plugins: {

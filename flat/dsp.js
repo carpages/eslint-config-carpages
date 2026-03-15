@@ -2,10 +2,8 @@ const { defineConfig } = require('eslint/config');
 const requirejsEslintPlugin = require('eslint-plugin-requirejs');
 const globals = require('globals');
 
-const defaultConfig = require('./default');
-
 module.exports = defineConfig([
-  ...defaultConfig,
+  require('./default'),
   {
     plugins: {
       requirejs: requirejsEslintPlugin,

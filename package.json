@@ -5,7 +5,8 @@
   "main": "default.js",
   "scripts": {
     "test": "ava -v",
-    "eslint-check": "eslint --print-config .eslintrc.js"
+    "lint": "eslint .",
+    "eslint-check": "eslint --print-config eslint.config.js"
   },
   "files": [
     "/default.js",
